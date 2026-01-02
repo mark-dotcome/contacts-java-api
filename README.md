@@ -10,6 +10,7 @@ A RESTful API for managing contacts built with Spring Boot and MongoDB. This is 
 - MongoDB Atlas
 - Maven
 - Lombok
+- SpringDoc OpenAPI (Swagger UI)
 
 ## Project Structure
 
@@ -115,6 +116,15 @@ java -jar target/contacts-api-1.0.0.jar
 ```
 
 The API will be available at `http://localhost:8080`.
+
+## API Documentation (Swagger UI)
+
+Once the application is running, you can access the interactive API documentation at:
+
+- Swagger UI: `http://localhost:8080/swagger-ui.html`
+- OpenAPI JSON: `http://localhost:8080/v3/api-docs`
+
+The Swagger UI provides an interactive interface to explore and test all API endpoints.
 
 ## Example Requests
 

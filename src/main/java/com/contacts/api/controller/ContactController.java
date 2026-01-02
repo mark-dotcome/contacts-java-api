@@ -4,6 +4,11 @@ import com.contacts.api.dto.ContactSearchResponse;
 import com.contacts.api.exception.ResourceNotFoundException;
 import com.contacts.api.model.Contact;
 import com.contacts.api.service.ContactService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,6 +20,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/contacts")
+@Tag(name = "Contacts", description = "Contact management API")
 public class ContactController {
 
     private final ContactService contactService;
